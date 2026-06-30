@@ -1,6 +1,6 @@
 <!---------------------------João------------------------------------>
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="html-root">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +8,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="page-body">
     <nav class="main-nav-bar">
         <div class="logo-area">
             <!-- Futura logo -->
-            <span>LOGO</span>
+            <span class="logo-text">LOGO</span>
+        </div>
         <ul class="nav-links">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">História</a></li>
-            <li><a href="#">Festivais</a></li>
-            <li><a href="#">Bandas</a></li>
-            <li><a href="#">Contato</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">História</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Festivais</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Bandas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
         </ul>
+        <div class="auth-buttons">
+            <button class="btn-login">Login</button>
+            <button class="btn-signup">Cadastrar</button>
+        </div>
     </nav>
+
     <section class="title">
-        <h1>Rock dos Anas</h1>
-        <p>Conheça a história, os maiores festivais e a importância do rock na cultura mundial.</p>
+        <!-- Carrossel de fundo -->
+        <div class="carousel-bg">
+            <div class="carousel-slide active"></div>
+            <div class="carousel-slide"></div>
+            <div class="carousel-slide"></div>
+            <div class="carousel-slide"></div>
+        </div>
+        
+        <div class="title-content">
+            <h1 class="main-title">Rock dos Anas</h1>
+            <p class="subtitle">Conheça a história, os maiores festivais e a importância do rock na cultura mundial.</p>
+        </div>
     </section>
 
     <main class="container">
 
         <section class="info">
-            <h2>O que são eventos de rock?</h2>
-            <p>
+            <h2 class="section-title">O que são eventos de rock?</h2>
+            <p class="section-text">
                 Eventos de rock são apresentações musicais que reúnem bandas,
                 artistas e milhares de fãs. Eles podem ocorrer em estádios,
                 arenas e grandes espaços ao ar livre.
@@ -38,16 +54,16 @@
         </section>
 
         <section class="info">
-            <h2>Principais festivais</h2>
-            <p>
+            <h2 class="section-title">Principais festivais</h2>
+            <p class="section-text">
                 Festivais como Woodstock, Rock in Rio e Lollapalooza marcaram
                 a história da música e atraem milhões de pessoas todos os anos.
             </p>
         </section>
 
         <section class="info">
-            <h2>Importância cultural</h2>
-            <p>
+            <h2 class="section-title">Importância cultural</h2>
+            <p class="section-text">
                 O rock influenciou gerações e continua sendo um dos estilos
                 musicais mais importantes da cultura popular mundial.
             </p>
@@ -55,9 +71,9 @@
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Trabalho Escolar sobre Eventos de Rock</p>
-        <p>Desenvolvido pela equipe do projeto.</p>
+    <footer class="main-footer">
+        <p class="footer-text footer-copyright">&copy; 2026 - Trabalho Escolar sobre Eventos de Rock</p>
+        <p class="footer-text footer-credits">Desenvolvido pela equipe do projeto.</p>
     </footer>
 
 </body>
